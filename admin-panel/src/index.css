@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply font-sans text-slate-900;
+  @apply bg-gradient-to-b from-white via-slate-50 to-slate-100;
+}
+
+@layer base {
+  ::selection {
+    background: theme("colors.brand.200");
+  }
+}
+
